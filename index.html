@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <!-- google.fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"/>
+    <!-- swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CariKost</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <div class="container">
+          <div class="box-navbar">
+            <div class="logo">
+              <h1>Cari<b>Kost</b></h1>
+            </div>
+
+            <ul class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#kost">Kost</a></li>
+              <li><a href="#ulasan">Ulasan</a></li>
+              <li class="active">
+                <a href="#daftarkankost">Daftarkan Kost</a>
+              </li>
+            </ul>
+
+            <i class="fa-solid fa-bars menu-bar"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="container">
+          <div class="box-hero">
+            <div class="box">
+              <h1>Temukan Kost Impianmu!</h1>
+              <p>Pilih jenis kost dan temukan yang sesuai dengan kebutuhanmu.</p>
+              <div class="dropdown">
+                <button class="btn-cari" id="btnCari">Cari Kost</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                  <a href="#kost-putra">Kost Putra</a>
+                  <a href="#kost-putri">Kost Putri</a>
+                  <a href="#kost-campuran">Kost Campuran</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img src="asset/kos.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tentang -->
+    <div class="tentang" id="tentang">
+      <h1 class="heading">
+        <span>T</span>
+        <span>E</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>N</span>
+        <span>G</span>
+      </h1>
+      <div class="container">
+        <div class="box-tentang">
+          <div class="box">
+            <img src="asset/kos.png" alt="" />
+          </div>
+          <div class="box">
+            <h1>CariKost</h1>
+            <p><em>CariKost</em> hadir untuk membantu kamu menemukan kost yang nyaman dan sesuai kebutuhan. Bukan cuma soal lokasi atau harga, tapi soal menemukan tempat yang bikin kamu betah seperti di rumah sendiri.</p>
+            <p>Dekat kampus, kantor, atau area favoritmu, <em>CariKost</em> memudahkan proses cari kost jadi cepat, gampang, dan menyenangkan. <br>Dengan <em>CariKost</em>, temukan kost yang nyaman dan dekat di hati.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tentang -->
+
+    <!-- KOST -->
+    <div class="kost" id="kost">
+      <!-- Kost Putra-->
+      <div class="Kost" id="kost-putra">
+        <h1 class="heading">
+          <span>K</span>
+          <span>O</span>
+          <span>S</span>
+          <span>T</span>
+        </h1>
+        <div class="container">
+          <h2>Rekomendasi Kost Putra</h2>
+          <div class="box-kost">
+            <!-- Kos 1 -->
+            <div class="box">
+              <img src="asset/Kos Pa1.png" alt="" />
+              <h3>Kost Putra Marisa</h3>
+              <p>Bae, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="Kost Putra Marisa"
+                data-fasilitas="Kasur, Lemari, Kamar mandi luar, Parkiran, Jemuran"
+                data-harga="Rp 300.000 / bulan"
+                data-layanan="Listrik + Air"
+                data-alamat="Jl. Kampus UMK No.06, Kepyar, Dersalam, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59321"
+                data-jenis="Kost Putra"
+                data-img="asset/Kos Pa1.png"
+                
+                data-wa="https://wa.me/6281234567891"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/xsvk9vV9au2nKRGj7">
+                Detail
+              </button>
+            </div>
+            <!-- Kos 2 -->
+            <div class="box">
+              <img src="asset/Kos Pa2.png" alt="" />
+              <h3>Kost Mulia</h3>
+              <p>Barongan, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="Kost Putra Mulia"
+                data-fasilitas="WiFi, Kasur, Lemari, Kamar mandi dalam, Kipas Angin, Parkiran, Jemuran"
+                data-harga="Rp 500.000 / bulan"
+                data-layanan="Wifi + Listrik + Air"
+                data-alamat="Jl. Karangnongko No.346, Barongan, Kec. Kota Kudus, Kabupaten Kudus, Jawa Tengah 59312"
+                data-jenis="Kost Putra"
+                data-img="asset/Kos Pa2.png"
+                data-wa="https://wa.me/6285225125925"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/otidcbenmWvutxYJ9">
+                Detail
+              </button>
+            </div>
+            <!-- Kos 3 -->
+            <div class="box">
+              <img src="asset/Kos Pa3.png" alt="" />
+              <h3>Melati Indah Kost</h3>
+              <p>Jati, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="Melati Indah Kost"
+                data-fasilitas="WiFi, Kasur, Lemari, Kipas Angin, Kamar mandi dalam, Dapur, Jemuran, Parkiran"
+                data-harga="Rp 550.000 / bulan"
+                data-layanan="Wifi + Listrik + Air"
+                data-alamat="Jl. Mejobo, Mlati Kidul, Megawon, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59342"
+                data-jenis="Kost Putra"
+                data-img="asset/Kos Pa3.png"
+                data-wa="https://wa.me/6288239000210"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/paJcBSCRChhp5SED6">
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kost Putri-->
+      <div class="Kost" id="kost-putri">
+        <div class="container">
+          <h2>Rekomendasi Kost Putri</h2>
+          <div class="box-kost">
+            <!-- Kos 1 -->
+            <div class="box">
+              <img src="asset/Kos Pi1.png" alt="" />
+              <h3>Kost Az-zahra</h3>
+              <p>Bae, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="Wisma Kost Putri Az-zahra"
+                data-fasilitas="WiFi, Kasur, Lemari, Kipas Angin, Kamar Mandi (Dalam dan Luar) , Mesin Cuci, Parkiran, Jemuran, Dapur, Kulkas"
+                data-harga="Rp 700.000 / bulan"
+                data-layanan="Wifi + Cuci + Listrik + Air"
+                data-alamat="Jl. Dersalam Krajan, Dersalam, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59321"
+                data-jenis="Kost Putri"
+                data-img="asset/Kos Pi1.png"
+                data-wa="https://wa.me/6281326344153"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/otn7vR1Zd5NUYYXL9">
+                Detail
+              </button>
+            </div>
+            <!-- Kos 2 -->
+            <div class="box">
+              <img src="asset/Kos Pi2.png" alt="" />
+              <h3>Kost Puri Delima D'Salam</h3>
+              <p>Bae, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="Kost Puri Delima D'Salam"
+                data-fasilitas="WiFi, Kasur, Lemari,Kipas Angin, Kamar mandi dalam, Kulkas, Parkiran, Jemuran"
+                data-harga="Rp 650.000 / bulan"
+                data-layanan="Wifi + Listrik + Air"
+                data-alamat="Jl. Dersalam Krajan, Dersalam, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59321"
+                data-jenis="Kost Putri"
+                data-img="asset/Kos Pi2.png"
+                data-wa="https://wa.me/6285770242444"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/Cg7vCzgJxczF2Gmh9">
+                Detail
+              </button>
+            </div>
+            <!-- Kos 3 -->
+            <div class="box">
+              <img src="asset/Kos Pi3.jpg" alt="" />
+              <h3>GM Kost</h3>
+              <p>Bae, Kudus</p>
+              <button
+                class="detail-btn"
+                data-nama="GM Kost"
+                data-fasilitas="WiFi, Kasur, Lemari, Kipas Angin, Kamar mandi (Dalam dan Luar), Dapur, Kulkas, Air Galon, Parkiran, Jemuran"
+                data-harga="Rp 650.000 / bulan"
+                data-layanan="Wifi + Listrik + Air"
+                data-alamat="Jl. Dersalam Krajan, Dersalam, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59327"
+                data-jenis="Kost Putri"
+                data-img="asset/Kos Pi3.jpg"
+                data-wa="https://wa.me/6281325853454"
+                data-ig="https://instagram.com/kost"
+                data-maps="https://maps.app.goo.gl/sAsjmMBuVsuTkqWq6">
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kost Campuran-->
+        <div class="Kost" id="kost-campuran">
+          <div class="container">
+            <h2>Rekomendasi Kost Campuran</h2>
+            <div class="box-kost">
+              <!-- Kos 1 -->
+              <div class="box">
+                <img src="asset/Kos C1.png" alt="" />
+                <h3>Pangeran Java</h3>
+                <p>Bae, Kudus</p>
+                <button
+                  class="detail-btn"
+                  data-nama="Pangeran Java"
+                  data-fasilitas="WiFi, Kasur, Lemari, Kamar mandi dalam"
+                  data-harga="Rp 900.000 / bulan"
+                  data-layanan="Cuci + Listrik + Air"
+                  data-alamat="Jl. Kampus UMK, Kayuapu Kulon, Gondangmanis, Kec. Bae, Kabupaten Kudus, Jawa Tengah"
+                  data-jenis="Kost Campuran"
+                  data-img="asset/Kos C1.png"
+                  data-wa="https://wa.me/6281226897026"
+                  data-ig="https://instagram.com/kost"
+                  data-maps="https://maps.app.goo.gl/xwtEWwaqEzT4dURx6">
+                  Detail
+                </button>
+              </div>
+              <!-- Kos 2 -->
+              <div class="box">
+                <img src="asset/Kos C2.png" alt="" />
+                <h3>Tipayung Kost</h3>
+                <p>Bae, Kudus</p>
+                <button
+                  class="detail-btn"
+                  data-nama="Tipayung Kost"
+                  data-fasilitas="WiFi, Kasur, Lemari, Kamar mandi dalam"
+                  data-harga="Rp 900.000 / bulan"
+                  data-layanan="Cuci + Listrik + Air"
+                  data-alamat="Jl. Kampus UMK Gg. Tipayung 1, Kepyar, Dersalam, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59321"
+                  data-jenis="Kost Campuran"
+                  data-img="asset/Kos C2.png"
+                  data-wa="https://wa.me/6281234567890"
+                  data-ig="https://instagram.com/kost"
+                  data-maps="https://maps.app.goo.gl/QmW4TeYvvx9h76NA7">
+                  Detail
+                </button>
+              </div>
+              <!-- Kos 3 -->
+              <div class="box">
+                <img src="asset/Kos C3.png" alt="" />
+                <h3>Kost Ashley Kudus</h3>
+                <p>Bae, Kudus</p>
+                <button
+                  class="detail-btn"
+                  data-nama="Kost Ashley Kudus"
+                  data-fasilitas="WiFi, Kasur, Lemari, Kamar mandi dalam"
+                  data-harga="Rp 900.000 / bulan"
+                  data-layanan="Cuci + Listrik + Air"
+                  data-alamat="Dukuh Karang Sambung, RT.04/RW.04, Karangsambong, Bae, Kec. Bae, Kabupaten Kudus, Jawa Tengah 59327"
+                  data-jenis="Kost Campuran"
+                  data-img="asset/Kos C3.png"
+                  data-wa="https://wa.me/6282135737975"
+                  data-ig="https://instagram.com/kost"
+                  data-maps="https://maps.app.goo.gl/mKnopmEv4ga5pqnv6">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- KOST -->
+
+      <!-- Ulasan -->
+      <div class="ulasan" id="ulasan">
+        <h1 class="heading">
+          <span>U</span>
+          <span>L</span>
+          <span>A</span>
+          <span>S</span>
+          <span>A</span>
+          <span>N</span>
+        </h1>
+        <div class="swiper-container ulasan-slider">
+          <div class="swiper-wrapper">
+            <!-- ulasan 1 -->
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="asset/orang u/orang1.jpg" alt="" />
+                <h3>Nayla Khusna</h3>
+                <p>
+                  Sangat membantu! CariKost memudahkan saya menemukan kost dekat kampus dengan cepat. Informasi lengkap, foto kamar jelas, dan fasilitas tercantum dengan detail. Sangat rekomendasi untuk mahasiswa!
+                </p>
+                <div class="stars rating-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ulasan 2 -->
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="asset/orang u/orang2.jpg" alt="" />
+                <h3>Anjani Putri</h3>
+                <p>
+                  Simple dan gampang dipakai. Cari kost nggak pake ribet, bisa langsung lihat foto dan lokasi. Recommended!
+                </p>
+                <div class="stars rating-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ulasan 3 -->
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="asset/orang u/orang3.jpg" alt="" />
+                <h3>Julio Nasik</h3>
+                <p>
+                  Enak dipakai buat liat-liat kost. Kadang ada beberapa kost yang foto dan info-nya kurang lengkap, tapi masih worth it.
+                </p>
+                <div class="stars rating-4">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ulasan -->
+
+      <!-- Daftarkan Kost -->
+      <div class="daftar" id="daftarkankost">
+        <div class="container">
+          <div class="box-daftar">
+            <h1>Kamu Pemilik Kost? <br>Daftarkan Kostmu Sekarang</h1>
+            <h3>Isi Formulir Pemilik Kost di Bawah Ini</h3>
+
+            <!-- Form di kiri -->
+            <fieldset>
+              <form id="formKost">
+                <label>Nama Pemilik Kost</label>
+                <input type="text" name="nama" required placeholder="Masukkan nama lengkap" />
+
+                <label>Nama Kost</label>
+                <input type="text" name="namakost" required placeholder="Contoh: Kost Mawar Indah" />
+
+                <label>Alamat Kost</label>
+                <textarea name="alamat" required placeholder="Alamat lengkap kost"></textarea>
+
+                <label>No. WhatsApp Aktif</label>
+                <input type="tel" name="whatsapp" required placeholder="08xxxxxxxxxx" />
+
+                <label>Upload Bukti Kepemilikan Kost (wajib JPG, PNG, atau PDF)</label>
+                <input type="file" name="bukti" id="bukti" accept=".jpg,.jpeg,.png,.pdf" required />
+
+                <label>Isi Pernyataan Kepemilikan Kost</label>
+                <textarea id="pernyataan" placeholder="Tuliskan pernyataan bahwa Anda adalah pemilik sah kost ini..." required></textarea>
+
+                <label class="check">
+                  <input type="checkbox" id="confirmCheck" />
+                  <p>Saya menyatakan bahwa data yang saya berikan <strong>benar dan valid</strong>.</p>
+                </label>
+              </form>
+            </fieldset>
+
+            <!-- Tombol kanan -->
+            <div class="tombol-daftar">
+              <button type="button" onclick="bukaGForm()" disabled>
+                <i class="fa-regular fa-clipboard"></i> GForm
+              </button>
+              <button type="button" onclick="kirimWhatsApp()" disabled>
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </button>
+              <button type="button" onclick="kirimEmail()" disabled>
+                <i class="fa-regular fa-envelope"></i> Email
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Daftarkan Kost -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="box-footer">
+          <div class="box">
+            <h3>CariKost</h3>
+            <p>
+              CariKost membantu kamu menemukan kost nyaman, dekat, dan bikin betah seperti di rumah sendiri.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#kost">Kost</a></li>
+              <li><a href="#ulasan">Ulasan</a></li>
+              <li><a href="#daftarkankost">Daftarkan Kost</a></li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Contact us</h3>
+            <ul>
+              <li><a href="mailto:cari.kosst@gmail.con">Email</a></li>
+              <li><a href="https://wa.me/6285600949910">WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/cari.kosst?utm_source=qr&igsh=OGN3Z201eDN1MGs2">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@carikosst?_t=ZS-90fguZjx81H&_r=1">Tiktok</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          &copy; Copyright by <span>CariKost</span> All Rights Reserved 2025,Kost
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- detail kost - Popup Modal Detail Kost -->
+    <div id="kostModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="modal-body">
+          <img id="modalImg" src="" alt="Foto Kost" />
+          <div class="modal-text">
+            <h2 id="modalNama"></h2>
+            <p><strong>Jenis:</strong> <span id="modalJenis"></span></p>
+            <p><strong>Alamat:</strong> <span id="modalAlamat"></span></p>
+            <p><strong>Fasilitas:</strong> <span id="modalFasilitas"></span></p>
+            <p><strong>Harga:</strong> <span id="modalHarga"></span></p>
+            <p><strong>Layanan:</strong> <span id="modalLayanan"></span></p>
+            <div class="modal-buttons">
+              <a id="modalWa" target="_blank" title="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a id="modalIg" target="_blank" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a id="modalMaps" target="_blank" title="Maps"
+                ><i class="fas fa-map-marker-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- detail kost -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
